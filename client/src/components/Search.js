@@ -56,7 +56,7 @@ const Search = () => {
                 // Créer un lien de téléchargement pour le fichier
                 const link = document.createElement('a');
                 link.href = fileUrl;
-                link.download = filename; // Télécharge le fichier avec son nom d'origine
+                link.download = filename; 
                 link.click();
             })
             .catch((err) => {
@@ -158,7 +158,7 @@ const Search = () => {
                                             padding: '5px 15px',
                                             borderRadius: '20px',
                                             border: '1px solid #28a745',
-                                            color: '#28a745', // Couleur du texte et bordure
+                                            color: '#28a745', 
                                         }}
                                     >
                                         <FaEye />
@@ -171,7 +171,7 @@ const Search = () => {
                                             padding: '5px 15px',
                                             borderRadius: '20px',
                                             border: '1px solid #dc3545',
-                                            color: '#dc3545', // Couleur du texte et bordure
+                                            color: '#dc3545', 
                                         }}
                                     >
                                         <FaDownload />

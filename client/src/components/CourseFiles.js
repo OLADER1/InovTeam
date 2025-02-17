@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Button, Spinner, Alert, Modal, Card, Row, Col } from 'react-bootstrap';
-import { FaDownload, FaEye, FaFilePdf } from 'react-icons/fa'; // Utilisation des icônes
+import { FaDownload, FaEye, FaFilePdf } from 'react-icons/fa'; 
 import { Link, useParams } from 'react-router-dom';
 import { Worker, Viewer } from '@react-pdf-viewer/core';
 import '@react-pdf-viewer/core/lib/styles/index.css';
@@ -12,8 +12,8 @@ const CourseFiles = () => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const [showModal, setShowModal] = useState(false);
-    const [modalFile, setModalFile] = useState(null); // Pour gérer le fichier dans le modal
-    const [fileName, setFileName] = useState(''); // Nom du fichier pour afficher dans le modal
+    const [modalFile, setModalFile] = useState(null);
+    const [fileName, setFileName] = useState(''); 
 
     useEffect(() => {
         setLoading(true);

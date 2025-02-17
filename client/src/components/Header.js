@@ -17,7 +17,7 @@ function Header() {
         <nav style={{ backgroundColor: "#D56E6C", padding: "15px 0", fontSize: "22px", fontWeight: "bold", position:"fixed", width:"100%", top:"0", zIndex:"1" }}>
             <Container>
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                    {/* Logo */}
+                    
                     <Link to="/" style={{ fontSize: "28px", fontWeight: "bold", textDecoration: "none", color: "white", paddingRight:"25px" }}>
                         VocalSwitch/Doc.
                     </Link>
@@ -35,7 +35,7 @@ function Header() {
                                 <Link 
                                     to={`/${item.toLowerCase()}`} 
                                     style={{ 
-                                        color: "white", // Jaune doux pour les liens
+                                        color: "white", 
                                         textDecoration: "none", 
                                         padding: "8px 20px",
                                         borderRadius: "5px",
@@ -60,7 +60,7 @@ function Header() {
                                 borderRadius: "50%", 
                                 padding: "8px 10px", 
                                 marginLeft: "10px",
-                                borderColor: "#F9D35A" // Bordure jaune sur le bouton
+                                borderColor: "#F9D35A" 
                             }}
                         >
                             <FaSearch color="#F9D35A" />

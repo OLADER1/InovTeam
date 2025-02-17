@@ -30,7 +30,7 @@ const Upload = () => {
         if (file && courseId) {
             const formData = new FormData();
             formData.append('file', file);
-            formData.append('course_id', courseId); // Ajouter l'ID du cours
+            formData.append('course_id', courseId);
 
             axios.post('http://localhost:5000/upload', formData)
                 .then(response => {
